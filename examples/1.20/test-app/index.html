@@ -3,6 +3,62 @@
 	<title>Test NGINX passed</title>
 </head>
 <body>
-<h1>NGINX is working</h1>
+<h1>NGINX is working on the CHoA OpenShift Cluster!</h1>
 </body>
+</html>
+        <style>
+            table {
+                font-family: arial, sans-serif;
+                border-collapse: collapse;
+                width: 80%;
+              }
+              
+              td, th {
+                border: 1px solid #dddddd;
+                text-align: left;
+                padding: 8px;
+              }
+              
+              tr:nth-child(even) {
+                background-color: #dddddd;
+              }
+        </style>    
+    </head>
+    <body>
+        <table>
+            <tr>
+              <th style="width:30%" >Information</th>
+              <th>Values</th>
+              </tr>
+            <tr>
+              <td>Container image 1</td>
+              <td>nginx:1.2.0 built on the Red Hat Universal Base Image</td>
+            </tr>
+            <tr>
+              <td>Container image 2</td>
+	      <td>Oauth2-proxy -- an authentication gateway in the same pod </td>
+            </tr>
+            <tr>
+              <td>Authentication Provider</td>
+              <td>Keycloak Oauth2</td>
+            </tr>
+            <tr>
+              <td>Authentication Protocol</td>
+              <td>Open ID Connect (OIDC)</td>
+            </tr>
+            <tr>
+              <td>Proof of Concept</td>
+              <td>If you see this, Oauth2 authentication worked</td>
+            </tr>
+            <tr>
+		    <td>This page made in VIM 8.0.1763</td> 
+		    <td>jbarlow@redhat.com</td>
+            </tr>
+        </table>
+    This concludes the Oauth2 / OIDC / nginx demo!
+    <br>
+    <a href="https://flask-keyauth.apps.ocp4.jimbarlow.com/oauth2/sign_out">Logout from this session</a>
+    <br>
+    Thanks for watching!
+    </body>
 </html>
